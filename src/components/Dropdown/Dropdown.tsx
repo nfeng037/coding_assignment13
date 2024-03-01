@@ -1,6 +1,6 @@
-import React from "react";
-import { styled } from "styled-components";
-import { type DropdownProps } from "./Dropdown.types";
+import React from 'react'
+import { styled } from 'styled-components'
+import { type DropdownProps } from './Dropdown.types'
 
 const Select = styled.select`
   padding: 8px;
@@ -11,7 +11,7 @@ const Select = styled.select`
     color: #ccc;
     cursor: not-allowed;
   }
-`;
+`
 
 const Dropdown: React.FC<DropdownProps> = ({
   id,
@@ -19,7 +19,7 @@ const Dropdown: React.FC<DropdownProps> = ({
   value,
   onChange,
   options,
-  disabled = false,
+  disabled = false
 }) => {
   return (
     <Select
@@ -35,7 +35,7 @@ const Dropdown: React.FC<DropdownProps> = ({
         </option>
       ))}
     </Select>
-  );
-};
+  )
+}
 
-export default Dropdown;
+export default Dropdown

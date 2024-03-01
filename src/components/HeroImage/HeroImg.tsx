@@ -1,6 +1,6 @@
-import React from "react";
-import styled from "styled-components";
-import { type HeroImageProps } from "./HeroImg.types";
+import React from 'react'
+import styled from 'styled-components'
+import { type HeroImageProps } from './HeroImg.types'
 
 const HeroImageContainer = styled.div<HeroImageProps>`
   background-image: url(${(props) => props.imageUrl});
@@ -20,22 +20,22 @@ const HeroImageContainer = styled.div<HeroImageProps>`
     background: none;
     background-color: darkgrey;
   `}
-`;
+`
 
 const Title = styled.h1`
   color: #fff;
-`;
+`
 
 const Subtitle = styled.h2`
   color: #fff;
-`;
+`
 
 const CallToActionButton = styled.button`
   padding: 10px 20px;
   margin-top: 20px;
   font-size: 16px;
   cursor: pointer;
-`;
+`
 
 const HeroImage: React.FC<HeroImageProps> = ({
   imageUrl,
@@ -43,7 +43,7 @@ const HeroImage: React.FC<HeroImageProps> = ({
   subtitle,
   Text,
   disabled = false,
-  OnClick,
+  OnClick
 }) => {
   return (
     <HeroImageContainer imageUrl={imageUrl} disabled={disabled}>
@@ -53,7 +53,7 @@ const HeroImage: React.FC<HeroImageProps> = ({
         <CallToActionButton onClick={OnClick}>{Text}</CallToActionButton>
       )}
     </HeroImageContainer>
-  );
-};
+  )
+}
 
-export default HeroImage;
+export default HeroImage

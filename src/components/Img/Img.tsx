@@ -1,6 +1,6 @@
-import React from "react";
-import styled from "styled-components";
-import { type ImgProps } from "./Img.types";
+import React from 'react'
+import styled from 'styled-components'
+import { type ImgProps } from './Img.types'
 
 const StyledImg = styled.img<ImgProps>`
   background-color: lightgrey;
@@ -12,7 +12,7 @@ const StyledImg = styled.img<ImgProps>`
     cursor: not-allowed;
     color: #darkgrey;
   `}
-`;
+`
 
 const Img: React.FC<ImgProps> = ({ src, alt, width, height, disabled }) => {
   return (
@@ -23,7 +23,7 @@ const Img: React.FC<ImgProps> = ({ src, alt, width, height, disabled }) => {
       height={height}
       disabled={disabled}
     />
-  );
-};
+  )
+}
 
-export default Img;
+export default Img

@@ -1,6 +1,6 @@
-import React from "react";
-import styled from "styled-components";
-import { type CardProps } from "./Card.types";
+import React from 'react'
+import styled from 'styled-components'
+import { type CardProps } from './Card.types'
 
 const CardContainer = styled.div<{ disabled?: boolean }>`
   border: 1px solid #ddd;
@@ -15,21 +15,21 @@ const CardContainer = styled.div<{ disabled?: boolean }>`
   background: none;
   background-color: darkgrey;
 `}
-`;
+`
 
 const Image = styled.img`
   width: 100%;
   border-radius: 4px;
-`;
+`
 
 const Title = styled.h2`
   font-size: 1.2em;
   margin-top: 10px;
-`;
+`
 
 const Content = styled.p`
   margin-top: 10px;
-`;
+`
 
 const Button = styled.button`
   margin-top: 20px;
@@ -39,7 +39,7 @@ const Button = styled.button`
   background-color: blue;
   color: white;
   cursor: pointer;
-`;
+`
 
 const Card: React.FC<CardProps> = ({
   imageurl,
@@ -47,7 +47,7 @@ const Card: React.FC<CardProps> = ({
   content,
   buttonText,
   onButtonClick,
-  disabled,
+  disabled
 }) => {
   return (
     <CardContainer disabled={disabled}>
@@ -60,7 +60,7 @@ const Card: React.FC<CardProps> = ({
         </Button>
       )}
     </CardContainer>
-  );
-};
+  )
+}
 
-export default Card;
+export default Card

@@ -1,17 +1,17 @@
-import React from 'react';
-import styled from "styled-components";
-import { type ButtonProps } from "./Button.types";
-import { typeScale } from "../../utils";
+import React from 'react'
+import styled from 'styled-components'
+import { type ButtonProps } from './Button.types'
+import { typeScale } from '../../utils'
 
 const StyledButton = styled.button<ButtonProps>`
   border-radius: 3px;
   display: inline-block;
   padding: ${(props) =>
-    props.size === "small"
-      ? "8px"
-      : props.size === "medium"
-        ? "12px 25px"
-        : "18px 32px"};
+    props.size === 'small'
+      ? '8px'
+      : props.size === 'medium'
+        ? '12px 25px'
+        : '18px 32px'};
   border: none;
   font-size: ${typeScale.paragraph};
   border-radius: 1rem;
@@ -23,7 +23,8 @@ const StyledButton = styled.button<ButtonProps>`
     color 0.3s linear;
 
   background-color: ${(props) =>
-    props.primary ? props.theme.primaryColor : props.theme.secondaryColor};
+    props.primary === true ? props.theme.primaryColor : props.theme.secondaryColor};
+
   color: ${(props) =>
     props.primary
       ? props.theme.textColorOnPrimary
@@ -101,10 +102,10 @@ const StyledButton = styled.button<ButtonProps>`
       background-color: ${props.theme.status.warningActiveColor};
     }
   `}
-`;
+`
 
 const Button: React.FC<ButtonProps> = ({
-  size = "medium",
+  size = 'medium',
   disabled = false,
   text,
   onClick,
@@ -121,7 +122,7 @@ const Button: React.FC<ButtonProps> = ({
     >
       {text}
     </StyledButton>
-  );
-};
+  )
+}
 
-export default Button;
+export default Button

@@ -1,55 +1,53 @@
-import React from "react";
-import { type Meta, type StoryObj } from "@storybook/react";
-import Text from "./Text";
-import { type TextProps } from "./Text.types";
-import { typeScale } from "../../utils";
-import { type LabelProps } from "../Label/Label.types";
+import { type Meta, type StoryObj } from '@storybook/react'
+import Text from './Text'
+import { type TextProps } from './Text.types'
+import { type LabelProps } from '../Label/Label.types'
 
 const meta: Meta = {
-  title: "Components/Text",
+  title: 'Components/Text',
   component: Text,
-  argTypes: {},
-};
-export default meta;
+  argTypes: {}
+}
+export default meta
 
 export const DefaultText: StoryObj<TextProps> = {
   args: {
-    types: "paragraph",
-    text: "Paragraph",
-  },
-};
+    types: 'paragraph',
+    text: 'Paragraph'
+  }
+}
 
 export const HeaderText: StoryObj<TextProps> = {
   args: {
-    types: "header",
-    text: "Header Text",
-  },
-};
+    types: 'header',
+    text: 'Header Text'
+  }
+}
 
 export const CopyRightText: StoryObj<TextProps> = {
   args: {
-    types: "copyright",
-    text: "Copyright Text",
-  },
-};
+    types: 'copyright',
+    text: 'Copyright Text'
+  }
+}
 
 export const BoldText: StoryObj<TextProps> = {
   args: {
     bold: true,
-    text: "Bold Text",
-  },
-};
+    text: 'Bold Text'
+  }
+}
 
 export const ItalicText: StoryObj<TextProps> = {
   args: {
     italic: true,
-    text: "Italic Text",
-  },
-};
+    text: 'Italic Text'
+  }
+}
 
 export const DisabledText: StoryObj<LabelProps> = {
   args: {
-    text: "Disabled",
-    disabled: true,
-  },
-};
+    text: 'Disabled',
+    disabled: true
+  }
+}

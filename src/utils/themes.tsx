@@ -3,9 +3,9 @@ import {
   successColor,
   errorColor,
   warningColor,
-  neutral,
-} from "./colors";
-import { primaryFont } from "./typography";
+  neutral
+} from './colors'
+import { primaryFont } from './typography'
 
 export const defaultTheme = {
   primaryColor: primaryColor[100],
@@ -31,9 +31,9 @@ export const defaultTheme = {
     errorActiveColor: errorColor[300],
     successColor: successColor[100],
     successHoverColor: successColor[200],
-    successActiveColor: successColor[300],
-  },
-};
+    successActiveColor: successColor[300]
+  }
+}
 
 export const darkTheme = {
   primaryColor: neutral[300],
@@ -56,6 +56,6 @@ export const darkTheme = {
     errorActiveColor: errorColor[300],
     successColor: successColor[100],
     successHoverColor: successColor[200],
-    successActiveColor: successColor[300],
-  },
-};
+    successActiveColor: successColor[300]
+  }
+}

@@ -1,23 +1,23 @@
-import type React from "react";
+import type React from 'react'
 
 export interface TableProps {
-  children: React.ReactNode;
-  disabled?: boolean;
+  children: React.ReactNode
+  disabled?: boolean
 }
 
 export interface TableHeaderProps {
-  children: React.ReactNode;
+  children: React.ReactNode
 }
 
 export interface TableRowProps {
-  children: React.ReactNode;
+  children: React.ReactNode
 }
 
 export interface TableCellProps {
-  children: React.ReactNode;
-  align?: "left" | "right" | "center";
+  children: React.ReactNode
+  align?: 'left' | 'right' | 'center'
 }
 
 export interface TableFooterProps {
-  children: React.ReactNode;
+  children: React.ReactNode
 }

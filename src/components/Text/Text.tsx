@@ -1,18 +1,18 @@
-import React from "react";
-import styled from "styled-components";
-import { type TextProps } from "./Text.types";
-import { typeScale } from "../../utils";
+import React from 'react'
+import styled from 'styled-components'
+import { type TextProps } from './Text.types'
+import { typeScale } from '../../utils'
 
 const StyledText = styled.span<TextProps>`
   font-family: "Playfair Display", serif;
   font-size: ${(props) =>
-    props.types === "header"
+    props.types === 'header'
       ? typeScale.header2
-      : props.types === "paragraph"
+      : props.types === 'paragraph'
         ? typeScale.paragraph
         : typeScale.copyrightText};
-  font-weight: ${(props) => (props.bold ? "bold" : "normal")};
-  font-style: ${(props) => (props.italic ? "italic" : "normal")};
+  font-weight: ${(props) => (props.bold ? 'bold' : 'normal')};
+  font-style: ${(props) => (props.italic ? 'italic' : 'normal')};
   ${(props) =>
     props.disabled &&
     `
@@ -20,10 +20,10 @@ const StyledText = styled.span<TextProps>`
     cursor: not-allowed;
     color: #ccc;
   `}
-`;
+`
 
 const Text: React.FC<TextProps> = ({
-  types = "paragraph",
+  types = 'paragraph',
   bold,
   italic,
   text,
@@ -33,7 +33,7 @@ const Text: React.FC<TextProps> = ({
     <StyledText types={types} bold={bold} italic={italic} {...props}>
       {text}
     </StyledText>
-  );
-};
+  )
+}
 
-export default Text;
+export default Text
