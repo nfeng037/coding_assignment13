@@ -64,7 +64,6 @@
     "rollup-plugin-dts": "^6.1.0",
     "storybook": "^7.6.12",
     "storybook-addon-theme-provider": "^0.1.15",
-    "styled-components": "^6.1.8",
     "typescript": "^5.3.3"
   },
   "main": "dist/cjs/index.js",
@@ -76,6 +75,6 @@
   "dependencies": {
     "@storybook/addon-backgrounds": "^7.6.12",
     "@storybook/addon-contexts": "^5.3.21",
-    "styled-components": "^2.8.0"
+    "styled-components": "^6.1.8"
   }
 }
