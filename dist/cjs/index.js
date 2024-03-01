@@ -3834,7 +3834,9 @@ var StyledButton = ut.button(templateObject_1$8 || (templateObject_1$8 = __makeT
             ? '12px 25px'
             : '18px 32px';
 }, typeScale.paragraph, function (props) {
-    return props.primary === true ? props.theme.primaryColor : props.theme.secondaryColor;
+    return props.primary === true
+        ? props.theme.primaryColor
+        : props.theme.secondaryColor;
 }, function (props) {
     return props.primary
         ? props.theme.textColorOnPrimary
