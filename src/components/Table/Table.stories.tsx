@@ -1,13 +1,13 @@
 // Table.stories.tsx
 
 import React from "react";
-import { Meta, Story } from '@storybook/react';
+import { type Meta, type Story } from "@storybook/react";
 import Table from "./Table";
 import TableHeader from "./TableHeader";
 import TableCell from "./TableCell";
 import TableRow from "./TableRow";
 import TableFooter from "./TableFooter";
-import { TableProps } from "./Table.types";
+import { type TableProps } from "./Table.types";
 
 const meta: Meta<TableProps> = {
   title: "Components/Table",
@@ -53,8 +53,7 @@ const Template: Story<TableProps> = (args) => (
 
 // Default Table
 export const Default = Template.bind({});
-Default.args = {
-};
+Default.args = {};
 
 export const DisabledTable = Template.bind({});
 DisabledTable.args = {

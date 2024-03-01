@@ -1,8 +1,8 @@
 import React from "react";
-import { Meta, Story } from "@storybook/react";
-import { ThemeProvider } from 'styled-components';
+import { type Meta, type Story } from "@storybook/react";
+import { ThemeProvider } from "styled-components";
 import Button from "./Button";
-import { ButtonProps } from "./Button.types";
+import { type ButtonProps } from "./Button.types";
 import { defaultTheme, darkTheme } from "../../utils";
 
 const meta: Meta = {
@@ -17,102 +17,115 @@ const Template: Story<ButtonProps> = (args) => <Button {...args} />;
 export const DefaultTheme = Template.bind({});
 DefaultTheme.args = {
   primary: true,
-  size: 'medium',
-  text: 'Default Button',
+  size: "medium",
+  text: "Default Button",
 };
-DefaultTheme.decorators = [(Story) => (
-  <ThemeProvider theme={defaultTheme}>
-    <Story />
-  </ThemeProvider>
-)];
-
+DefaultTheme.decorators = [
+  (Story) => (
+    <ThemeProvider theme={defaultTheme}>
+      <Story />
+    </ThemeProvider>
+  ),
+];
 
 export const DarkTheme = Template.bind({});
 DarkTheme.args = {
-  primary:true,
-  size: 'medium',
-  text: 'Dark Theme Button'
+  primary: true,
+  size: "medium",
+  text: "Dark Theme Button",
 };
-DarkTheme.decorators = [(Story) => (
-  <ThemeProvider theme = {darkTheme}>
-    <Story />
-  </ThemeProvider>
-)];
-
+DarkTheme.decorators = [
+  (Story) => (
+    <ThemeProvider theme={darkTheme}>
+      <Story />
+    </ThemeProvider>
+  ),
+];
 
 export const Small = Template.bind({});
 Small.args = {
   primary: true,
-  size: 'small',
-  text: 'Small Button',
+  size: "small",
+  text: "Small Button",
 };
-Small.decorators = [(Story) => (
-  <ThemeProvider theme={defaultTheme}>
-    <Story />
-  </ThemeProvider>
-)];
+Small.decorators = [
+  (Story) => (
+    <ThemeProvider theme={defaultTheme}>
+      <Story />
+    </ThemeProvider>
+  ),
+];
 
 export const Large = Template.bind({});
 Large.args = {
   primary: true,
-  size: 'large',
-  text: 'Large Button',
-}
-Large.decorators = [(Story) => (
-  <ThemeProvider theme={defaultTheme}>
-    <Story />
-  </ThemeProvider>
-)];
+  size: "large",
+  text: "Large Button",
+};
+Large.decorators = [
+  (Story) => (
+    <ThemeProvider theme={defaultTheme}>
+      <Story />
+    </ThemeProvider>
+  ),
+];
 
 export const Disabled = Template.bind({});
 Disabled.args = {
   primary: true,
-  size: 'medium',
-  text: 'Disabled',
+  size: "medium",
+  text: "Disabled",
   disabled: true,
 };
-Disabled.decorators = [(Story) => (
-  <ThemeProvider theme={darkTheme}>
-    <Story />
-  </ThemeProvider>
-)];
+Disabled.decorators = [
+  (Story) => (
+    <ThemeProvider theme={darkTheme}>
+      <Story />
+    </ThemeProvider>
+  ),
+];
 
 export const Success = Template.bind({});
 Success.args = {
   primary: true,
-  size: 'medium',
-  text: 'Success',
+  size: "medium",
+  text: "Success",
   isSuccess: true,
 };
-Success.decorators = [(Story) => (
-  <ThemeProvider theme={darkTheme}>
-    <Story />
-  </ThemeProvider>
-)];
-
+Success.decorators = [
+  (Story) => (
+    <ThemeProvider theme={darkTheme}>
+      <Story />
+    </ThemeProvider>
+  ),
+];
 
 export const Error = Template.bind({});
 Error.args = {
   primary: true,
-  size: 'medium',
-  text: 'Error',
+  size: "medium",
+  text: "Error",
   isError: true,
 };
-Error.decorators = [(Story) => (
-  <ThemeProvider theme={darkTheme}>
-    <Story />
-  </ThemeProvider>
-)];
+Error.decorators = [
+  (Story) => (
+    <ThemeProvider theme={darkTheme}>
+      <Story />
+    </ThemeProvider>
+  ),
+];
 
 export const Warning = Template.bind({});
 Warning.args = {
   primary: true,
-  size: 'medium',
-  text: 'Warning',
+  size: "medium",
+  text: "Warning",
   isWarning: true,
 };
-Warning.decorators = [(Story) => (
-  <ThemeProvider theme={darkTheme}>
-    <Story />
-  </ThemeProvider>
-)];
+Warning.decorators = [
+  (Story) => (
+    <ThemeProvider theme={darkTheme}>
+      <Story />
+    </ThemeProvider>
+  ),
+];

@@ -2,7 +2,7 @@
 FROM node:latest
 
 # Set the working directory in the container
-WORKDIR /na_feng_ui_garden
+WORKDIR /na_feng_ui_garden_build_checks
 
 # Copy the package.json file and package-lock.json file
 COPY package*.json ./
@@ -23,4 +23,4 @@ RUN npm run build-storybook
 RUN npm install -g http-server
 
 # The default command to run when starting the container
-CMD ["http-server", "storybook-static", "-p 8083"]
+CMD ["http-server", "storybook-static", "-p 8018"]

@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import { ButtonProps } from "./Button.types";
+import { type ButtonProps } from "./Button.types";
 import { typeScale } from "../../utils";
 
 const StyledButton = styled.button<ButtonProps>`
@@ -10,15 +10,17 @@ const StyledButton = styled.button<ButtonProps>`
     props.size === "small"
       ? "8px"
       : props.size === "medium"
-      ? "12px 25px"
-      : "18px 32px"};
+        ? "12px 25px"
+        : "18px 32px"};
   border: none;
   font-size: ${typeScale.paragraph};
   border-radius: 1rem;
   min-width: 80px;
   cursor: pointer;
   font-family: "Playfair Display", serif;
-  transition: background-color 0.3s linear, color 0.3s linear;
+  transition:
+    background-color 0.3s linear,
+    color 0.3s linear;
 
   background-color: ${(props) =>
     props.primary ? props.theme.primaryColor : props.theme.secondaryColor};

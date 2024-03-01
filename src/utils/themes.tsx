@@ -1,4 +1,10 @@
-import { primaryColor, successColor, errorColor, warningColor, neutral} from "./colors";
+import {
+  primaryColor,
+  successColor,
+  errorColor,
+  warningColor,
+  neutral,
+} from "./colors";
 import { primaryFont } from "./typography";
 
 export const defaultTheme = {
@@ -13,7 +19,7 @@ export const defaultTheme = {
   textColorOnSecondary: neutral[100],
   textColor: neutral[500],
   textColorInverted: neutral[100],
-  primaryFont: primaryFont,
+  primaryFont,
   disabled: neutral[300],
   textOnDisabled: neutral[100],
   status: {
@@ -24,11 +30,10 @@ export const defaultTheme = {
     errorHoverColor: errorColor[200],
     errorActiveColor: errorColor[300],
     successColor: successColor[100],
-    successHoverColor:successColor[200],
-    successActiveColor: successColor[300]
-  }
-}
-
+    successHoverColor: successColor[200],
+    successActiveColor: successColor[300],
+  },
+};
 
 export const darkTheme = {
   primaryColor: neutral[300],
@@ -39,7 +44,7 @@ export const darkTheme = {
   textColorOnSecondary: neutral[100],
   textColor: neutral[300],
   textColorInverted: neutral[100],
-  primaryFont: primaryFont,
+  primaryFont,
   disabled: neutral[400],
   textOnDisabled: neutral[100],
   status: {
@@ -50,7 +55,7 @@ export const darkTheme = {
     errorHoverColor: errorColor[200],
     errorActiveColor: errorColor[300],
     successColor: successColor[100],
-    successHoverColor:successColor[200],
-    successActiveColor: successColor[300]
-  }
-}
+    successHoverColor: successColor[200],
+    successActiveColor: successColor[300],
+  },
+};

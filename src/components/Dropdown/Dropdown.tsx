@@ -1,6 +1,6 @@
 import React from "react";
 import { styled } from "styled-components";
-import { DropdownProps } from "./Dropdown.types";
+import { type DropdownProps } from "./Dropdown.types";
 
 const Select = styled.select`
   padding: 8px;
@@ -22,7 +22,13 @@ const Dropdown: React.FC<DropdownProps> = ({
   disabled = false,
 }) => {
   return (
-    <Select id={id} name={name} value={value} onChange={onChange} disabled={disabled}>
+    <Select
+      id={id}
+      name={name}
+      value={value}
+      onChange={onChange}
+      disabled={disabled}
+    >
       {options.map((option) => (
         <option key={option.value} value={option.value}>
           {option.label}
