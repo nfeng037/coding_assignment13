@@ -23,7 +23,9 @@ const StyledButton = styled.button<ButtonProps>`
     color 0.3s linear;
 
   background-color: ${(props) =>
-    props.primary === true ? props.theme.primaryColor : props.theme.secondaryColor};
+    props.primary === true
+      ? props.theme.primaryColor
+      : props.theme.secondaryColor};
 
   color: ${(props) =>
     props.primary
