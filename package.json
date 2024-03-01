@@ -11,7 +11,7 @@
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build",
     "test": "jest",
-    "lint": "eslint .",
+    "lint": "eslint src/ --ext .ts,.tsx",
     "format": "prettier --write 'src/**/*.{js,jsx,ts,tsx,json,css,md}'",
     "lint:fix": "eslint --fix && npm run format"
   },

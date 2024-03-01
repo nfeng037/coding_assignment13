@@ -25,6 +25,5 @@
         "react": {
             "version": "detect"
         }
-    },
-    "ignorePatterns": ["rollup.config.js"]
+    }
 }
