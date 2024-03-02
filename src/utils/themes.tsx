@@ -25,7 +25,7 @@ export const defaultTheme = {
   status: {
     warningColor: warningColor[100],
     warningHoverColor: warningColor[200],
-    wariningActiveColor: warningColor[300],
+    warningActiveColor: warningColor[300],
     errorColor: errorColor[100],
     errorHoverColor: errorColor[200],
     errorActiveColor: errorColor[300],
@@ -50,7 +50,7 @@ export const darkTheme = {
   status: {
     warningColor: warningColor[100],
     warningHoverColor: warningColor[200],
-    wariningActiveColor: warningColor[300],
+    warningActiveColor: warningColor[300],
     errorColor: errorColor[100],
     errorHoverColor: errorColor[200],
     errorActiveColor: errorColor[300],
