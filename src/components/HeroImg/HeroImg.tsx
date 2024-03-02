@@ -6,7 +6,7 @@ const HeroImageContainer = styled.div<HeroImageProps>`
   background-image: url(${(props) => props.imageUrl});
   background-size: cover;
   background-position: center;
-  height: 400px; 
+  height: 400px;
   display: flex;
   flex-direction: column;
   justify-content: center;

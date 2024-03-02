@@ -2,10 +2,11 @@ import React from 'react'
 import { type Story, type Meta } from '@storybook/react'
 import HeroImage from './HeroImg'
 import { type HeroImageProps } from './HeroImg.types'
+import { HeroImg } from '.'
 
 export default {
   title: 'Components/HeroImage',
-  component: HeroImage
+  component: HeroImg
 } as Meta
 
 const Template: Story<HeroImageProps> = (args) => <HeroImage {...args} />

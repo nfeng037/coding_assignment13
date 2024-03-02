@@ -4,7 +4,7 @@ import { type TableRowProps } from './Table.types'
 
 const StyledTableRow = styled.tr<TableRowProps>`
   &:nth-child(even) {
-    padding: 8px;
+    background-color: #f9f9f9;
   }
 `
 

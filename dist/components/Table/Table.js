@@ -17,7 +17,7 @@ import { jsx as _jsx } from "react/jsx-runtime";
 import styled from 'styled-components';
 var StyledTable = styled.table(templateObject_1 || (templateObject_1 = __makeTemplateObject(["\n  width: 100%;\n  border: none;\n  ", "\n"], ["\n  width: 100%;\n  border: none;\n  ", "\n"])), function (props) {
     return props.disabled &&
-        "\n    cursor: not-allowed;\n  ";
+        "\n    background-color: lightgrey;\n    cursor: not-allowed;\n    color: #darkgrey;\n  ";
 });
 var Table = function (props) {
     return _jsx(StyledTable, __assign({}, props, { children: props.children }));

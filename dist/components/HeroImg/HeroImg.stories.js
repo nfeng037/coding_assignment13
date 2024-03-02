@@ -11,9 +11,10 @@ var __assign = (this && this.__assign) || function () {
 };
 import { jsx as _jsx } from "react/jsx-runtime";
 import HeroImage from './HeroImg';
+import { HeroImg } from '.';
 export default {
     title: 'Components/HeroImage',
-    component: HeroImage
+    component: HeroImg
 };
 var Template = function (args) { return _jsx(HeroImage, __assign({}, args)); };
 export var Default = Template.bind({});

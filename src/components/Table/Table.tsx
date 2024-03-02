@@ -8,7 +8,9 @@ const StyledTable = styled.table<TableProps>`
   ${(props) =>
     props.disabled &&
     `
+    background-color: lightgrey;
     cursor: not-allowed;
+    color: #darkgrey;
   `}
 `
 

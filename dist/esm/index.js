@@ -2364,7 +2364,7 @@ var Dropdown = function (_a) {
 };
 var templateObject_1$4;
 
-var HeroImageContainer = ut.div(templateObject_1$3 || (templateObject_1$3 = __makeTemplateObject(["\n  background-image: url(", ");\n  background-size: cover;\n  background-position: center;\n  height: 400px; \n  display: flex;\n  flex-direction: column;\n  justify-content: center;\n  align-items: center;\n  text-align: center;\n  position: relative;\n  ", "\n"], ["\n  background-image: url(", ");\n  background-size: cover;\n  background-position: center;\n  height: 400px; \n  display: flex;\n  flex-direction: column;\n  justify-content: center;\n  align-items: center;\n  text-align: center;\n  position: relative;\n  ", "\n"])), function (props) { return props.imageUrl; }, function (props) {
+var HeroImageContainer = ut.div(templateObject_1$3 || (templateObject_1$3 = __makeTemplateObject(["\n  background-image: url(", ");\n  background-size: cover;\n  background-position: center;\n  height: 400px;\n  display: flex;\n  flex-direction: column;\n  justify-content: center;\n  align-items: center;\n  text-align: center;\n  position: relative;\n  ", "\n"], ["\n  background-image: url(", ");\n  background-size: cover;\n  background-position: center;\n  height: 400px;\n  display: flex;\n  flex-direction: column;\n  justify-content: center;\n  align-items: center;\n  text-align: center;\n  position: relative;\n  ", "\n"])), function (props) { return props.imageUrl; }, function (props) {
     return props.disabled &&
         "\n    cursor: not-allowed;\n  ";
 });
@@ -2389,7 +2389,7 @@ var templateObject_1$2;
 
 var StyledTable = ut.table(templateObject_1$1 || (templateObject_1$1 = __makeTemplateObject(["\n  width: 100%;\n  border: none;\n  ", "\n"], ["\n  width: 100%;\n  border: none;\n  ", "\n"])), function (props) {
     return props.disabled &&
-        "\n    cursor: not-allowed;\n  ";
+        "\n    background-color: lightgrey;\n    cursor: not-allowed;\n    color: #darkgrey;\n  ";
 });
 var Table = function (props) {
     return jsxRuntimeExports.jsx(StyledTable, __assign({}, props, { children: props.children }));

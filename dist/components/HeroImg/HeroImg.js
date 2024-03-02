@@ -4,7 +4,7 @@ var __makeTemplateObject = (this && this.__makeTemplateObject) || function (cook
 };
 import { jsx as _jsx, jsxs as _jsxs } from "react/jsx-runtime";
 import styled from 'styled-components';
-var HeroImageContainer = styled.div(templateObject_1 || (templateObject_1 = __makeTemplateObject(["\n  background-image: url(", ");\n  background-size: cover;\n  background-position: center;\n  height: 400px; \n  display: flex;\n  flex-direction: column;\n  justify-content: center;\n  align-items: center;\n  text-align: center;\n  position: relative;\n  ", "\n"], ["\n  background-image: url(", ");\n  background-size: cover;\n  background-position: center;\n  height: 400px; \n  display: flex;\n  flex-direction: column;\n  justify-content: center;\n  align-items: center;\n  text-align: center;\n  position: relative;\n  ", "\n"])), function (props) { return props.imageUrl; }, function (props) {
+var HeroImageContainer = styled.div(templateObject_1 || (templateObject_1 = __makeTemplateObject(["\n  background-image: url(", ");\n  background-size: cover;\n  background-position: center;\n  height: 400px;\n  display: flex;\n  flex-direction: column;\n  justify-content: center;\n  align-items: center;\n  text-align: center;\n  position: relative;\n  ", "\n"], ["\n  background-image: url(", ");\n  background-size: cover;\n  background-position: center;\n  height: 400px;\n  display: flex;\n  flex-direction: column;\n  justify-content: center;\n  align-items: center;\n  text-align: center;\n  position: relative;\n  ", "\n"])), function (props) { return props.imageUrl; }, function (props) {
     return props.disabled &&
         "\n    cursor: not-allowed;\n  ";
 });
