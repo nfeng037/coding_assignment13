@@ -3,12 +3,11 @@ import styled from 'styled-components'
 import { type ImgProps } from './Img.types'
 
 const StyledImg = styled.img<ImgProps>`
-  background-color: lightgrey;
+
   opacity: ${(props) => (props.disabled ? 0.5 : 1)};
   ${(props) =>
     props.disabled &&
     `
-    background-color: lightgrey;
     cursor: not-allowed;
     color: #darkgrey;
   `}

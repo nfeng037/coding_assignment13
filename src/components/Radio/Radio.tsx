@@ -8,9 +8,7 @@ const StyledRadio = styled.input`
   ${(props) =>
     props.disabled &&
     `
-    background-color: lightgrey;
     cursor: not-allowed;
-    color: #darkgrey;
   `}
 `
 

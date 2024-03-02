@@ -4,9 +4,9 @@ var __makeTemplateObject = (this && this.__makeTemplateObject) || function (cook
 };
 import { jsx as _jsx, jsxs as _jsxs } from "react/jsx-runtime";
 import styled from 'styled-components';
-var HeroImageContainer = styled.div(templateObject_1 || (templateObject_1 = __makeTemplateObject(["\n  background-image: url(", ");\n  background-size: cover;\n  background-position: center;\n  height: 400px; // Adjust the height as needed\n  display: flex;\n  flex-direction: column;\n  justify-content: center;\n  align-items: center;\n  text-align: center;\n  position: relative;\n  ", "\n"], ["\n  background-image: url(", ");\n  background-size: cover;\n  background-position: center;\n  height: 400px; // Adjust the height as needed\n  display: flex;\n  flex-direction: column;\n  justify-content: center;\n  align-items: center;\n  text-align: center;\n  position: relative;\n  ", "\n"])), function (props) { return props.imageUrl; }, function (props) {
+var HeroImageContainer = styled.div(templateObject_1 || (templateObject_1 = __makeTemplateObject(["\n  background-image: url(", ");\n  background-size: cover;\n  background-position: center;\n  height: 400px; \n  display: flex;\n  flex-direction: column;\n  justify-content: center;\n  align-items: center;\n  text-align: center;\n  position: relative;\n  ", "\n"], ["\n  background-image: url(", ");\n  background-size: cover;\n  background-position: center;\n  height: 400px; \n  display: flex;\n  flex-direction: column;\n  justify-content: center;\n  align-items: center;\n  text-align: center;\n  position: relative;\n  ", "\n"])), function (props) { return props.imageUrl; }, function (props) {
     return props.disabled &&
-        "\n    cursor: not-allowed;\n    background: none;\n    background-color: darkgrey;\n  ";
+        "\n    cursor: not-allowed;\n  ";
 });
 var Title = styled.h1(templateObject_2 || (templateObject_2 = __makeTemplateObject(["\n  color: #fff;\n"], ["\n  color: #fff;\n"])));
 var Subtitle = styled.h2(templateObject_3 || (templateObject_3 = __makeTemplateObject(["\n  color: #fff;\n"], ["\n  color: #fff;\n"])));

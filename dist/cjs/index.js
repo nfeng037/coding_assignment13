@@ -2347,7 +2347,7 @@ var templateObject_1$6;
 
 var CardContainer = ut.div(templateObject_1$5 || (templateObject_1$5 = __makeTemplateObject(["\n  border: 1px solid #ddd;\n  border-radius: 4px;\n  padding: 20px;\n  max-width: 300px;\n  opacity: ", ";\n  ", "\n"], ["\n  border: 1px solid #ddd;\n  border-radius: 4px;\n  padding: 20px;\n  max-width: 300px;\n  opacity: ", ";\n  ", "\n"])), function (props) { return (props.disabled ? 0.5 : 1); }, function (props) {
     return props.disabled &&
-        "\n  cursor: not-allowed;\n  background: none;\n  background-color: darkgrey;\n";
+        "\n  cursor: not-allowed;\n";
 });
 var Image = ut.img(templateObject_2$1 || (templateObject_2$1 = __makeTemplateObject(["\n  width: 100%;\n  border-radius: 4px;\n"], ["\n  width: 100%;\n  border-radius: 4px;\n"])));
 var Title$1 = ut.h2(templateObject_3$1 || (templateObject_3$1 = __makeTemplateObject(["\n  font-size: 1.2em;\n  margin-top: 10px;\n"], ["\n  font-size: 1.2em;\n  margin-top: 10px;\n"])));
@@ -2366,9 +2366,9 @@ var Dropdown = function (_a) {
 };
 var templateObject_1$4;
 
-var HeroImageContainer = ut.div(templateObject_1$3 || (templateObject_1$3 = __makeTemplateObject(["\n  background-image: url(", ");\n  background-size: cover;\n  background-position: center;\n  height: 400px; // Adjust the height as needed\n  display: flex;\n  flex-direction: column;\n  justify-content: center;\n  align-items: center;\n  text-align: center;\n  position: relative;\n  ", "\n"], ["\n  background-image: url(", ");\n  background-size: cover;\n  background-position: center;\n  height: 400px; // Adjust the height as needed\n  display: flex;\n  flex-direction: column;\n  justify-content: center;\n  align-items: center;\n  text-align: center;\n  position: relative;\n  ", "\n"])), function (props) { return props.imageUrl; }, function (props) {
+var HeroImageContainer = ut.div(templateObject_1$3 || (templateObject_1$3 = __makeTemplateObject(["\n  background-image: url(", ");\n  background-size: cover;\n  background-position: center;\n  height: 400px; \n  display: flex;\n  flex-direction: column;\n  justify-content: center;\n  align-items: center;\n  text-align: center;\n  position: relative;\n  ", "\n"], ["\n  background-image: url(", ");\n  background-size: cover;\n  background-position: center;\n  height: 400px; \n  display: flex;\n  flex-direction: column;\n  justify-content: center;\n  align-items: center;\n  text-align: center;\n  position: relative;\n  ", "\n"])), function (props) { return props.imageUrl; }, function (props) {
     return props.disabled &&
-        "\n    cursor: not-allowed;\n    background: none;\n    background-color: darkgrey;\n  ";
+        "\n    cursor: not-allowed;\n  ";
 });
 var Title = ut.h1(templateObject_2 || (templateObject_2 = __makeTemplateObject(["\n  color: #fff;\n"], ["\n  color: #fff;\n"])));
 var Subtitle = ut.h2(templateObject_3 || (templateObject_3 = __makeTemplateObject(["\n  color: #fff;\n"], ["\n  color: #fff;\n"])));
@@ -2381,7 +2381,7 @@ var templateObject_1$3, templateObject_2, templateObject_3, templateObject_4;
 
 var StyledRadio = ut.input(templateObject_1$2 || (templateObject_1$2 = __makeTemplateObject(["\n  margin: 0.5rem;\n  cursor: pointer;\n  ", "\n"], ["\n  margin: 0.5rem;\n  cursor: pointer;\n  ", "\n"])), function (props) {
     return props.disabled &&
-        "\n    background-color: lightgrey;\n    cursor: not-allowed;\n    color: #darkgrey;\n  ";
+        "\n    cursor: not-allowed;\n  ";
 });
 var Radio = function (_a) {
     var id = _a.id, name = _a.name, value = _a.value, checked = _a.checked, disabled = _a.disabled, onChange = _a.onChange;
@@ -2391,16 +2391,16 @@ var templateObject_1$2;
 
 var StyledTable = ut.table(templateObject_1$1 || (templateObject_1$1 = __makeTemplateObject(["\n  width: 100%;\n  border: none;\n  ", "\n"], ["\n  width: 100%;\n  border: none;\n  ", "\n"])), function (props) {
     return props.disabled &&
-        "\n    background-color: lightgrey;\n    cursor: not-allowed;\n    color: #darkgrey;\n  ";
+        "\n    cursor: not-allowed;\n  ";
 });
 var Table = function (props) {
     return jsxRuntimeExports.jsx(StyledTable, __assign({}, props, { children: props.children }));
 };
 var templateObject_1$1;
 
-var StyledImg = ut.img(templateObject_1 || (templateObject_1 = __makeTemplateObject(["\n  background-color: lightgrey;\n  opacity: ", ";\n  ", "\n"], ["\n  background-color: lightgrey;\n  opacity: ", ";\n  ", "\n"])), function (props) { return (props.disabled ? 0.5 : 1); }, function (props) {
+var StyledImg = ut.img(templateObject_1 || (templateObject_1 = __makeTemplateObject(["\n\n  opacity: ", ";\n  ", "\n"], ["\n\n  opacity: ", ";\n  ", "\n"])), function (props) { return (props.disabled ? 0.5 : 1); }, function (props) {
     return props.disabled &&
-        "\n    background-color: lightgrey;\n    cursor: not-allowed;\n    color: #darkgrey;\n  ";
+        "\n    cursor: not-allowed;\n    color: #darkgrey;\n  ";
 });
 var Img = function (_a) {
     var src = _a.src, alt = _a.alt, width = _a.width, height = _a.height, disabled = _a.disabled;

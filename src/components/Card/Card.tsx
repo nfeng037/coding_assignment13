@@ -12,8 +12,6 @@ const CardContainer = styled.div<{ disabled?: boolean }>`
     props.disabled &&
     `
   cursor: not-allowed;
-  background: none;
-  background-color: darkgrey;
 `}
 `
 

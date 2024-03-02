@@ -4,9 +4,9 @@ var __makeTemplateObject = (this && this.__makeTemplateObject) || function (cook
 };
 import { jsx as _jsx } from "react/jsx-runtime";
 import styled from 'styled-components';
-var StyledImg = styled.img(templateObject_1 || (templateObject_1 = __makeTemplateObject(["\n  background-color: lightgrey;\n  opacity: ", ";\n  ", "\n"], ["\n  background-color: lightgrey;\n  opacity: ", ";\n  ", "\n"])), function (props) { return (props.disabled ? 0.5 : 1); }, function (props) {
+var StyledImg = styled.img(templateObject_1 || (templateObject_1 = __makeTemplateObject(["\n\n  opacity: ", ";\n  ", "\n"], ["\n\n  opacity: ", ";\n  ", "\n"])), function (props) { return (props.disabled ? 0.5 : 1); }, function (props) {
     return props.disabled &&
-        "\n    background-color: lightgrey;\n    cursor: not-allowed;\n    color: #darkgrey;\n  ";
+        "\n    cursor: not-allowed;\n    color: #darkgrey;\n  ";
 });
 var Img = function (_a) {
     var src = _a.src, alt = _a.alt, width = _a.width, height = _a.height, disabled = _a.disabled;

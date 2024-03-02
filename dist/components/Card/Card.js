@@ -6,7 +6,7 @@ import { jsx as _jsx, jsxs as _jsxs } from "react/jsx-runtime";
 import styled from 'styled-components';
 var CardContainer = styled.div(templateObject_1 || (templateObject_1 = __makeTemplateObject(["\n  border: 1px solid #ddd;\n  border-radius: 4px;\n  padding: 20px;\n  max-width: 300px;\n  opacity: ", ";\n  ", "\n"], ["\n  border: 1px solid #ddd;\n  border-radius: 4px;\n  padding: 20px;\n  max-width: 300px;\n  opacity: ", ";\n  ", "\n"])), function (props) { return (props.disabled ? 0.5 : 1); }, function (props) {
     return props.disabled &&
-        "\n  cursor: not-allowed;\n  background: none;\n  background-color: darkgrey;\n";
+        "\n  cursor: not-allowed;\n";
 });
 var Image = styled.img(templateObject_2 || (templateObject_2 = __makeTemplateObject(["\n  width: 100%;\n  border-radius: 4px;\n"], ["\n  width: 100%;\n  border-radius: 4px;\n"])));
 var Title = styled.h2(templateObject_3 || (templateObject_3 = __makeTemplateObject(["\n  font-size: 1.2em;\n  margin-top: 10px;\n"], ["\n  font-size: 1.2em;\n  margin-top: 10px;\n"])));

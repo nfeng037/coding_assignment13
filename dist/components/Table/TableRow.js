@@ -4,7 +4,7 @@ var __makeTemplateObject = (this && this.__makeTemplateObject) || function (cook
 };
 import { jsx as _jsx } from "react/jsx-runtime";
 import styled from 'styled-components';
-var StyledTableRow = styled.tr(templateObject_1 || (templateObject_1 = __makeTemplateObject(["\n  &:nth-child(even) {\n    background-color: #f9f9f9;\n  }\n"], ["\n  &:nth-child(even) {\n    background-color: #f9f9f9;\n  }\n"])));
+var StyledTableRow = styled.tr(templateObject_1 || (templateObject_1 = __makeTemplateObject(["\n  &:nth-child(even) {\n    padding: 8px;\n  }\n"], ["\n  &:nth-child(even) {\n    padding: 8px;\n  }\n"])));
 var TableRow = function (_a) {
     var children = _a.children;
     return _jsx(StyledTableRow, { children: children });
