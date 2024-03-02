@@ -4,5 +4,5 @@ declare const _default: {
     component: React.FC<import("./Radio.types").RadioProps>;
 };
 export default _default;
-export declare const Default: () => React.JSX.Element;
-export declare const Disabled: () => React.JSX.Element;
+export declare const Default: () => import("react/jsx-runtime").JSX.Element;
+export declare const Disabled: () => import("react/jsx-runtime").JSX.Element;
