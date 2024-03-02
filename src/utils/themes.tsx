@@ -1,61 +1,55 @@
-import {
-  primaryColor,
-  successColor,
-  errorColor,
-  warningColor,
-  neutral
-} from './colors'
-import { primaryFont } from './typography'
+import { primaryFont } from './typography';
 
 export const defaultTheme = {
-  primaryColor: primaryColor[100],
-  primaryHoverColor: primaryColor[200],
-  primaryActiveColor: primaryColor[300],
-  primaryFocusColor: primaryColor[300],
-  secondaryColor: neutral[500],
-  secondaryHoverColor: neutral[400],
-  secondaryActiveColor: neutral[600],
-  textColorOnPrimary: neutral[100],
-  textColorOnSecondary: neutral[100],
-  textColor: neutral[500],
-  textColorInverted: neutral[100],
+  primaryColor: '#EB5552',
+  primaryHoverColor: '#F5B74C',
+  primaryActiveColor: '#C73438',
+  secondaryColor: '#2F2F2F',
+  secondaryHoverColor: '#878484',
+  secondaryActiveColor: '#000000',
+  textColorOnPrimary: '#FFFFFF',
+  textColorOnSecondary: '#FFFFFF',
+  textColor: '#2F2F2F',
+  textColorInverted: '#FFFFFF',
   primaryFont,
-  disabled: neutral[300],
-  textOnDisabled: neutral[100],
+  disabled: '#C8C8C8',
+  textOnDisabled: '#FFFFFF',
   status: {
-    warningColor: warningColor[100],
-    warningHoverColor: warningColor[200],
-    warningActiveColor: warningColor[300],
-    errorColor: errorColor[100],
-    errorHoverColor: errorColor[200],
-    errorActiveColor: errorColor[300],
-    successColor: successColor[100],
-    successHoverColor: successColor[200],
-    successActiveColor: successColor[300]
+    warningColor: '#FFC021',
+    warningHoverColor: '#FFAC00',
+    warningActiveColor: '#FFA200',
+    errorColor: '#FF677B',
+    errorHoverColor: '#F84B6A',
+    errorActiveColor: '#F72B50',
+    successColor: '#68E365',
+    successHoverColor: '#32B53A',
+    successActiveColor: '#008906'
   }
-}
+};
 
 export const darkTheme = {
-  primaryColor: neutral[300],
-  primaryHoverColor: neutral[200],
-  primaryActiveColor: neutral[300],
-  primaryFocusColor: neutral[300],
-  textColorOnPrimary: neutral[100],
-  textColorOnSecondary: neutral[100],
-  textColor: neutral[300],
-  textColorInverted: neutral[100],
+  primaryColor: '#C8C8C8',
+  primaryHoverColor: '#EEEEEE',
+  primaryActiveColor: '#C8C8C8',
+  secondaryColor: '#FFFFFF',
+  secondaryHoverColor: '#EEEEEE',
+  secondaryActiveColor: '#C8C8C8',
+  textColorOnPrimary: '#000000',
+  textColorOnSecondary: '#000000',
+  textColor: '#C8C8C8',
+  textColorInverted: '#000000',
   primaryFont,
-  disabled: neutral[400],
-  textOnDisabled: neutral[100],
+  disabled: '#878484',
+  textOnDisabled: '#2F2F2F',
   status: {
-    warningColor: warningColor[100],
-    warningHoverColor: warningColor[200],
-    warningActiveColor: warningColor[300],
-    errorColor: errorColor[100],
-    errorHoverColor: errorColor[200],
-    errorActiveColor: errorColor[300],
-    successColor: successColor[100],
-    successHoverColor: successColor[200],
-    successActiveColor: successColor[300]
+    warningColor: '#FFC021',
+    warningHoverColor: '#FFAC00',
+    warningActiveColor: '#FFA200',
+    errorColor: '#FF677B',
+    errorHoverColor: '#F84B6A',
+    errorActiveColor: '#F72B50',
+    successColor: '#68E365',
+    successHoverColor: '#32B53A',
+    successActiveColor: '#008906'
   }
-}
+};
