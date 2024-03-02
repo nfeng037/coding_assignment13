@@ -2,6 +2,7 @@ export declare const defaultTheme: {
     primaryColor: string;
     primaryHoverColor: string;
     primaryActiveColor: string;
+    primaryFocusColor: string;
     secondaryColor: string;
     secondaryHoverColor: string;
     secondaryActiveColor: string;
@@ -28,9 +29,7 @@ export declare const darkTheme: {
     primaryColor: string;
     primaryHoverColor: string;
     primaryActiveColor: string;
-    secondaryColor: string;
-    secondaryHoverColor: string;
-    secondaryActiveColor: string;
+    primaryFocusColor: string;
     textColorOnPrimary: string;
     textColorOnSecondary: string;
     textColor: string;
@@ -41,7 +40,7 @@ export declare const darkTheme: {
     status: {
         warningColor: string;
         warningHoverColor: string;
-        warningActiveColor: string;
+        wariningActiveColor: string;
         errorColor: string;
         errorHoverColor: string;
         errorActiveColor: string;
