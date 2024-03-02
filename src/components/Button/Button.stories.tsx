@@ -1,9 +1,7 @@
 import React from 'react'
 import { type Meta, type Story } from '@storybook/react'
-import { ThemeProvider } from 'styled-components'
 import Button from './Button'
 import { type ButtonProps } from './Button.types'
-import { defaultTheme, darkTheme } from '../../utils'
 
 const meta: Meta = {
   title: 'Components/Button',
@@ -14,33 +12,12 @@ export default meta
 
 const Template: Story<ButtonProps> = (args) => <Button {...args} />
 
-export const DefaultTheme = Template.bind({})
-DefaultTheme.args = {
+export const PrimaryMedium = Template.bind({})
+PrimaryMedium.args = {
   primary: true,
   size: 'medium',
-  text: 'Default Button'
+  text: 'Primary Medium'
 }
-DefaultTheme.decorators = [
-  (Story) => (
-    <ThemeProvider theme={defaultTheme}>
-      <Story />
-    </ThemeProvider>
-  )
-]
-
-export const DarkTheme = Template.bind({})
-DarkTheme.args = {
-  primary: true,
-  size: 'medium',
-  text: 'Dark Theme Button'
-}
-DarkTheme.decorators = [
-  (Story) => (
-    <ThemeProvider theme={darkTheme}>
-      <Story />
-    </ThemeProvider>
-  )
-]
 
 export const Small = Template.bind({})
 Small.args = {
@@ -48,13 +25,6 @@ Small.args = {
   size: 'small',
   text: 'Small Button'
 }
-Small.decorators = [
-  (Story) => (
-    <ThemeProvider theme={defaultTheme}>
-      <Story />
-    </ThemeProvider>
-  )
-]
 
 export const Large = Template.bind({})
 Large.args = {
@@ -62,13 +32,6 @@ Large.args = {
   size: 'large',
   text: 'Large Button'
 }
-Large.decorators = [
-  (Story) => (
-    <ThemeProvider theme={defaultTheme}>
-      <Story />
-    </ThemeProvider>
-  )
-]
 
 export const Disabled = Template.bind({})
 Disabled.args = {
@@ -77,13 +40,6 @@ Disabled.args = {
   text: 'Disabled',
   disabled: true
 }
-Disabled.decorators = [
-  (Story) => (
-    <ThemeProvider theme={darkTheme}>
-      <Story />
-    </ThemeProvider>
-  )
-]
 
 export const Success = Template.bind({})
 Success.args = {
@@ -92,13 +48,6 @@ Success.args = {
   text: 'Success',
   isSuccess: true
 }
-Success.decorators = [
-  (Story) => (
-    <ThemeProvider theme={darkTheme}>
-      <Story />
-    </ThemeProvider>
-  )
-]
 
 export const Error = Template.bind({})
 Error.args = {
@@ -107,13 +56,6 @@ Error.args = {
   text: 'Error',
   isError: true
 }
-Error.decorators = [
-  (Story) => (
-    <ThemeProvider theme={darkTheme}>
-      <Story />
-    </ThemeProvider>
-  )
-]
 
 export const Warning = Template.bind({})
 Warning.args = {
@@ -122,10 +64,3 @@ Warning.args = {
   text: 'Warning',
   isWarning: true
 }
-Warning.decorators = [
-  (Story) => (
-    <ThemeProvider theme={darkTheme}>
-      <Story />
-    </ThemeProvider>
-  )
-]

@@ -1,18 +1,17 @@
 import React from 'react'
 import styled from 'styled-components'
-import { typeScale } from '../../utils'
 import { type LabelProps } from './Label.types'
 
 const StyledLabel = styled.label<LabelProps>`
   font-size: ${(props) =>
     props.size === 'small'
-      ? typeScale.helperText
+      ? '0.8rem'
       : props.size === 'medium'
-        ? typeScale.paragraph
-        : typeScale.header5};
+        ? '1rem'
+        : '1.1rem'};
   font-family: "Playfair Display", serif;
   cursor: pointer;
-  color: ${(props) => props.theme.textColor};
+  color: "#2F2F2F";
   ${(props) =>
     props.disabled &&
     `

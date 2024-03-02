@@ -1,7 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
 import { type ButtonProps } from './Button.types'
-import { typeScale } from '../../utils'
 
 const StyledButton = styled.button<ButtonProps>`
   border-radius: 3px;
@@ -13,7 +12,7 @@ const StyledButton = styled.button<ButtonProps>`
         ? '12px 25px'
         : '18px 32px'};
   border: none;
-  font-size: ${typeScale.paragraph};
+  font-size: 1rem;
   border-radius: 1rem;
   min-width: 80px;
   cursor: pointer;
@@ -23,85 +22,74 @@ const StyledButton = styled.button<ButtonProps>`
     color 0.3s linear;
 
   background-color: ${(props) =>
-    props.primary === true
-      ? props.theme.primaryColor
-      : props.theme.secondaryColor};
+    props.primary === true ? '#EB5552' : '#2F2F2F'};
 
-  color: ${(props) =>
-    props.primary
-      ? props.theme.textColorOnPrimary
-      : props.theme.textColorOnSecondary};
+  color: #ffffff;
 
   &:hover {
-    background-color: ${(props) =>
-      props.primary
-        ? props.theme.primaryHoverColor
-        : props.theme.secondaryHoverColor};
+    background-color: ${(props) => (props.primary ? '#F5B74C' : '#878484')};
   }
 
   &:focus {
-    outline: 2px solid ${(props) => props.theme.primaryColor};
+    outline: 2px solid #eb5552;
     outline-offset: 2px;
   }
 
   &:active {
-    background-color: ${(props) =>
-      props.primary
-        ? props.theme.primaryActiveColor
-        : props.theme.secondaryActiveColor};
+    background-color: ${(props) => (props.primary ? '#C73438' : '#000000')};
   }
 
   &:disabled {
-    background-color: ${(props) => props.theme.disabled};
-    color: ${(props) => props.theme.textOnDisabled};
+    background-color: #c8c8c8;
+    color: #ffffff;
     cursor: not-allowed;
   }
 
   ${(props) =>
     props.isSuccess &&
     `
-    background-color: ${props.theme.status.successColor};
+    background-color: #68E365;
     &:hover {
-      background-color: ${props.theme.status.successHoverColor};
+      background-color: #32B53A;
     }
     &:focus {
-      outline: 2px solid ${props.theme.status.successColor};
+      outline: 2px solid #68E365;
       outline-offset: 2px;
     }
     &:active {
-      background-color: ${props.theme.status.successActiveColor};
+      background-color: #008906;
     }
   `}
 
   ${(props) =>
     props.isError &&
     `
-    background-color: ${props.theme.status.errorColor};
+    background-color: #FF677B;
     &:hover {
-      background-color: ${props.theme.status.errorHoverColor};
+      background-color: F84B6A;
     }
     &:focus {
-      outline: 2px solid ${props.theme.status.errorColor};
+      outline: 2px solid #FF677B;
       outline-offset: 2px;
     }
     &:active {
-      background-color: ${props.theme.status.errorActiveColor};
+      background-color: #F72B50;
     }
   `}
 
   ${(props) =>
     props.isWarning &&
     `
-    background-color: ${props.theme.status.warningColor};
+    background-color: #FFC021;
     &:hover {
-      background-color: ${props.theme.status.warningHoverColor};
+      background-color: #FFAC00;
     }
     &:focus {
-      outline: 2px solid ${props.theme.status.warningColor};
+      outline: 2px solid #FFC021;
       outline-offset: 2px;
     }
     &:active {
-      background-color: ${props.theme.status.warningActiveColor};
+      background-color: #FFA200;
     }
   `}
 `

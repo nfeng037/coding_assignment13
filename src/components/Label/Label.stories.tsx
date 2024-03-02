@@ -1,9 +1,6 @@
-import React from 'react'
-import { type Meta, type StoryObj, type Story } from '@storybook/react'
+import { type Meta, type StoryObj } from '@storybook/react'
 import Label from './Label'
 import { type LabelProps } from './Label.types'
-import { darkTheme } from '../../utils'
-import { ThemeProvider } from 'styled-components'
 
 const meta: Meta = {
   title: 'Components/Label',
@@ -11,8 +8,6 @@ const meta: Meta = {
   argTypes: {}
 }
 export default meta
-
-const Template: Story<LabelProps> = (args) => <Label {...args} />
 
 export const Default: StoryObj<LabelProps> = {
   args: {
@@ -42,17 +37,3 @@ export const DisabledLabel: StoryObj<LabelProps> = {
     disabled: true
   }
 }
-
-export const DarkThemeFont = Template.bind({})
-DarkThemeFont.args = {
-  size: 'medium',
-  text: 'Default Front',
-  color: darkTheme.textColor
-}
-DarkThemeFont.decorators = [
-  (Story) => (
-    <ThemeProvider theme={darkTheme}>
-      <Story />
-    </ThemeProvider>
-  )
-]

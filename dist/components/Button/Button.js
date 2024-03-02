@@ -26,38 +26,23 @@ var __rest = (this && this.__rest) || function (s, e) {
 };
 import { jsx as _jsx } from "react/jsx-runtime";
 import styled from 'styled-components';
-import { typeScale } from '../../utils';
-var StyledButton = styled.button(templateObject_1 || (templateObject_1 = __makeTemplateObject(["\n  border-radius: 3px;\n  display: inline-block;\n  padding: ", ";\n  border: none;\n  font-size: ", ";\n  border-radius: 1rem;\n  min-width: 80px;\n  cursor: pointer;\n  font-family: \"Playfair Display\", serif;\n  transition:\n    background-color 0.3s linear,\n    color 0.3s linear;\n\n  background-color: ", ";\n\n  color: ", ";\n\n  &:hover {\n    background-color: ", ";\n  }\n\n  &:focus {\n    outline: 2px solid ", ";\n    outline-offset: 2px;\n  }\n\n  &:active {\n    background-color: ", ";\n  }\n\n  &:disabled {\n    background-color: ", ";\n    color: ", ";\n    cursor: not-allowed;\n  }\n\n  ", "\n\n  ", "\n\n  ", "\n"], ["\n  border-radius: 3px;\n  display: inline-block;\n  padding: ", ";\n  border: none;\n  font-size: ", ";\n  border-radius: 1rem;\n  min-width: 80px;\n  cursor: pointer;\n  font-family: \"Playfair Display\", serif;\n  transition:\n    background-color 0.3s linear,\n    color 0.3s linear;\n\n  background-color: ", ";\n\n  color: ", ";\n\n  &:hover {\n    background-color: ", ";\n  }\n\n  &:focus {\n    outline: 2px solid ", ";\n    outline-offset: 2px;\n  }\n\n  &:active {\n    background-color: ", ";\n  }\n\n  &:disabled {\n    background-color: ", ";\n    color: ", ";\n    cursor: not-allowed;\n  }\n\n  ", "\n\n  ", "\n\n  ", "\n"])), function (props) {
+var StyledButton = styled.button(templateObject_1 || (templateObject_1 = __makeTemplateObject(["\n  border-radius: 3px;\n  display: inline-block;\n  padding: ", ";\n  border: none;\n  font-size: 1rem;\n  border-radius: 1rem;\n  min-width: 80px;\n  cursor: pointer;\n  font-family: \"Playfair Display\", serif;\n  transition:\n    background-color 0.3s linear,\n    color 0.3s linear;\n\n  background-color: ", ";\n\n  color: #ffffff;\n\n  &:hover {\n    background-color: ", ";\n  }\n\n  &:focus {\n    outline: 2px solid #eb5552;\n    outline-offset: 2px;\n  }\n\n  &:active {\n    background-color: ", ";\n  }\n\n  &:disabled {\n    background-color: #c8c8c8;\n    color: #ffffff;\n    cursor: not-allowed;\n  }\n\n  ", "\n\n  ", "\n\n  ", "\n"], ["\n  border-radius: 3px;\n  display: inline-block;\n  padding: ", ";\n  border: none;\n  font-size: 1rem;\n  border-radius: 1rem;\n  min-width: 80px;\n  cursor: pointer;\n  font-family: \"Playfair Display\", serif;\n  transition:\n    background-color 0.3s linear,\n    color 0.3s linear;\n\n  background-color: ", ";\n\n  color: #ffffff;\n\n  &:hover {\n    background-color: ", ";\n  }\n\n  &:focus {\n    outline: 2px solid #eb5552;\n    outline-offset: 2px;\n  }\n\n  &:active {\n    background-color: ", ";\n  }\n\n  &:disabled {\n    background-color: #c8c8c8;\n    color: #ffffff;\n    cursor: not-allowed;\n  }\n\n  ", "\n\n  ", "\n\n  ", "\n"])), function (props) {
     return props.size === 'small'
         ? '8px'
         : props.size === 'medium'
             ? '12px 25px'
             : '18px 32px';
-}, typeScale.paragraph, function (props) {
-    return props.primary === true
-        ? props.theme.primaryColor
-        : props.theme.secondaryColor;
 }, function (props) {
-    return props.primary
-        ? props.theme.textColorOnPrimary
-        : props.theme.textColorOnSecondary;
-}, function (props) {
-    return props.primary
-        ? props.theme.primaryHoverColor
-        : props.theme.secondaryHoverColor;
-}, function (props) { return props.theme.primaryColor; }, function (props) {
-    return props.primary
-        ? props.theme.primaryActiveColor
-        : props.theme.secondaryActiveColor;
-}, function (props) { return props.theme.disabled; }, function (props) { return props.theme.textOnDisabled; }, function (props) {
+    return props.primary === true ? '#EB5552' : '#2F2F2F';
+}, function (props) { return (props.primary ? '#F5B74C' : '#878484'); }, function (props) { return (props.primary ? '#C73438' : '#000000'); }, function (props) {
     return props.isSuccess &&
-        "\n    background-color: ".concat(props.theme.status.successColor, ";\n    &:hover {\n      background-color: ").concat(props.theme.status.successHoverColor, ";\n    }\n    &:focus {\n      outline: 2px solid ").concat(props.theme.status.successColor, ";\n      outline-offset: 2px;\n    }\n    &:active {\n      background-color: ").concat(props.theme.status.successActiveColor, ";\n    }\n  ");
+        "\n    background-color: #68E365;\n    &:hover {\n      background-color: #32B53A;\n    }\n    &:focus {\n      outline: 2px solid #68E365;\n      outline-offset: 2px;\n    }\n    &:active {\n      background-color: #008906;\n    }\n  ";
 }, function (props) {
     return props.isError &&
-        "\n    background-color: ".concat(props.theme.status.errorColor, ";\n    &:hover {\n      background-color: ").concat(props.theme.status.errorHoverColor, ";\n    }\n    &:focus {\n      outline: 2px solid ").concat(props.theme.status.errorColor, ";\n      outline-offset: 2px;\n    }\n    &:active {\n      background-color: ").concat(props.theme.status.errorActiveColor, ";\n    }\n  ");
+        "\n    background-color: #FF677B;\n    &:hover {\n      background-color: F84B6A;\n    }\n    &:focus {\n      outline: 2px solid #FF677B;\n      outline-offset: 2px;\n    }\n    &:active {\n      background-color: #F72B50;\n    }\n  ";
 }, function (props) {
     return props.isWarning &&
-        "\n    background-color: ".concat(props.theme.status.warningColor, ";\n    &:hover {\n      background-color: ").concat(props.theme.status.warningHoverColor, ";\n    }\n    &:focus {\n      outline: 2px solid ").concat(props.theme.status.warningColor, ";\n      outline-offset: 2px;\n    }\n    &:active {\n      background-color: ").concat(props.theme.status.warningActiveColor, ";\n    }\n  ");
+        "\n    background-color: #FFC021;\n    &:hover {\n      background-color: #FFAC00;\n    }\n    &:focus {\n      outline: 2px solid #FFC021;\n      outline-offset: 2px;\n    }\n    &:active {\n      background-color: #FFA200;\n    }\n  ";
 });
 var Button = function (_a) {
     var _b = _a.size, size = _b === void 0 ? 'medium' : _b, _c = _a.disabled, disabled = _c === void 0 ? false : _c, text = _a.text, onClick = _a.onClick, props = __rest(_a, ["size", "disabled", "text", "onClick"]);

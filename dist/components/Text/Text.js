@@ -26,13 +26,12 @@ var __rest = (this && this.__rest) || function (s, e) {
 };
 import { jsx as _jsx } from "react/jsx-runtime";
 import styled from 'styled-components';
-import { typeScale } from '../../utils';
 var StyledText = styled.span(templateObject_1 || (templateObject_1 = __makeTemplateObject(["\n  font-family: \"Playfair Display\", serif;\n  font-size: ", ";\n  font-weight: ", ";\n  font-style: ", ";\n  ", "\n"], ["\n  font-family: \"Playfair Display\", serif;\n  font-size: ", ";\n  font-weight: ", ";\n  font-style: ", ";\n  ", "\n"])), function (props) {
     return props.types === 'header'
-        ? typeScale.header2
+        ? '1.6rem'
         : props.types === 'paragraph'
-            ? typeScale.paragraph
-            : typeScale.copyrightText;
+            ? '1rem'
+            : '0.7rem';
 }, function (props) { return (props.bold ? 'bold' : 'normal'); }, function (props) { return (props.italic ? 'italic' : 'normal'); }, function (props) {
     return props.disabled &&
         "\n    background-color: grey;\n    cursor: not-allowed;\n    color: #ccc;\n  ";

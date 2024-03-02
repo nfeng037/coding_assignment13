@@ -1,16 +1,15 @@
 import React from 'react'
 import styled from 'styled-components'
 import { type TextProps } from './Text.types'
-import { typeScale } from '../../utils'
 
 const StyledText = styled.span<TextProps>`
   font-family: "Playfair Display", serif;
   font-size: ${(props) =>
     props.types === 'header'
-      ? typeScale.header2
+      ? '1.6rem'
       : props.types === 'paragraph'
-        ? typeScale.paragraph
-        : typeScale.copyrightText};
+        ? '1rem'
+        : '0.7rem'};
   font-weight: ${(props) => (props.bold ? 'bold' : 'normal')};
   font-style: ${(props) => (props.italic ? 'italic' : 'normal')};
   ${(props) =>

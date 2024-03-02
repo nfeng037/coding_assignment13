@@ -9,17 +9,13 @@ var __assign = (this && this.__assign) || function () {
     };
     return __assign.apply(this, arguments);
 };
-import { jsx as _jsx } from "react/jsx-runtime";
 import Label from './Label';
-import { darkTheme } from '../../utils';
-import { ThemeProvider } from 'styled-components';
 var meta = {
     title: 'Components/Label',
     component: Label,
     argTypes: {}
 };
 export default meta;
-var Template = function (args) { return _jsx(Label, __assign({}, args)); };
 export var Default = {
     args: {
         htmlFor: 'my-input',
@@ -35,13 +31,4 @@ export var LargeFontSize = {
 export var DisabledLabel = {
     args: __assign(__assign({}, Default.args), { size: 'large', disabled: true })
 };
-export var DarkThemeFont = Template.bind({});
-DarkThemeFont.args = {
-    size: 'medium',
-    text: 'Default Front',
-    color: darkTheme.textColor
-};
-DarkThemeFont.decorators = [
-    function (Story) { return (_jsx(ThemeProvider, { theme: darkTheme, children: _jsx(Story, {}) })); }
-];
 //# sourceMappingURL=Label.stories.js.map

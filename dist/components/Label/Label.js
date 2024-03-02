@@ -26,14 +26,13 @@ var __rest = (this && this.__rest) || function (s, e) {
 };
 import { jsx as _jsx } from "react/jsx-runtime";
 import styled from 'styled-components';
-import { typeScale } from '../../utils';
-var StyledLabel = styled.label(templateObject_1 || (templateObject_1 = __makeTemplateObject(["\n  font-size: ", ";\n  font-family: \"Playfair Display\", serif;\n  cursor: pointer;\n  color: ", ";\n  ", "\n"], ["\n  font-size: ", ";\n  font-family: \"Playfair Display\", serif;\n  cursor: pointer;\n  color: ", ";\n  ", "\n"])), function (props) {
+var StyledLabel = styled.label(templateObject_1 || (templateObject_1 = __makeTemplateObject(["\n  font-size: ", ";\n  font-family: \"Playfair Display\", serif;\n  cursor: pointer;\n  color: \"#2F2F2F\";\n  ", "\n"], ["\n  font-size: ", ";\n  font-family: \"Playfair Display\", serif;\n  cursor: pointer;\n  color: \"#2F2F2F\";\n  ", "\n"])), function (props) {
     return props.size === 'small'
-        ? typeScale.helperText
+        ? '0.8rem'
         : props.size === 'medium'
-            ? typeScale.paragraph
-            : typeScale.header5;
-}, function (props) { return props.theme.textColor; }, function (props) {
+            ? '1rem'
+            : '1.1rem';
+}, function (props) {
     return props.disabled &&
         "\n    background-color: grey;\n    cursor: not-allowed;\n    color: #ccc;\n  ";
 });
