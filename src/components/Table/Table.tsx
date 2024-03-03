@@ -1,6 +1,6 @@
-import React from 'react'
-import styled from 'styled-components'
-import { type TableProps } from './Table.types'
+import React from "react";
+import styled from "styled-components";
+import { type TableProps } from "./Table.types";
 
 const StyledTable = styled.table<TableProps>`
   width: 100%;
@@ -12,10 +12,10 @@ const StyledTable = styled.table<TableProps>`
     cursor: not-allowed;
     color: #darkgrey;
   `}
-`
+`;
 
 const Table: React.FC<TableProps> = (props) => {
-  return <StyledTable {...props}>{props.children}</StyledTable>
-}
+  return <StyledTable {...props}>{props.children}</StyledTable>;
+};
 
-export default Table
+export default Table;

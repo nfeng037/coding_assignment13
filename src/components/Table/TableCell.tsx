@@ -1,17 +1,17 @@
-import React from 'react'
-import styled from 'styled-components'
-import { type TableCellProps } from './Table.types'
+import React from "react";
+import styled from "styled-components";
+import { type TableCellProps } from "./Table.types";
 
 const StyledTableCell = styled.td<TableCellProps>`
   padding: 8px;
-  text-align: ${(props) => props.align ?? 'center'};
-`
+  text-align: ${(props) => props.align ?? "center"};
+`;
 
 const TableCell: React.FC<TableCellProps> = ({
   children,
-  align = 'center'
+  align = "center",
 }) => {
-  return <StyledTableCell align={align}>{children}</StyledTableCell>
-}
+  return <StyledTableCell align={align}>{children}</StyledTableCell>;
+};
 
-export default TableCell
+export default TableCell;

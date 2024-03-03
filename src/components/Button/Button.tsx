@@ -1,16 +1,16 @@
-import React from 'react'
-import styled from 'styled-components'
-import { type ButtonProps } from './Button.types'
+import React from "react";
+import styled from "styled-components";
+import { type ButtonProps } from "./Button.types";
 
 const StyledButton = styled.button<ButtonProps>`
   border-radius: 3px;
   display: inline-block;
   padding: ${(props) =>
-    props.size === 'small'
-      ? '8px'
-      : props.size === 'medium'
-        ? '12px 25px'
-        : '18px 32px'};
+    props.size === "small"
+      ? "8px"
+      : props.size === "medium"
+        ? "12px 25px"
+        : "18px 32px"};
   border: none;
   font-size: 1rem;
   border-radius: 1rem;
@@ -22,12 +22,12 @@ const StyledButton = styled.button<ButtonProps>`
     color 0.3s linear;
 
   background-color: ${(props) =>
-    props.primary === true ? '#EB5552' : '#2F2F2F'};
+    props.primary === true ? "#EB5552" : "#2F2F2F"};
 
   color: #ffffff;
 
   &:hover {
-    background-color: ${(props) => (props.primary ? '#F5B74C' : '#878484')};
+    background-color: ${(props) => (props.primary ? "#F5B74C" : "#878484")};
   }
 
   &:focus {
@@ -36,7 +36,7 @@ const StyledButton = styled.button<ButtonProps>`
   }
 
   &:active {
-    background-color: ${(props) => (props.primary ? '#C73438' : '#000000')};
+    background-color: ${(props) => (props.primary ? "#C73438" : "#000000")};
   }
 
   &:disabled {
@@ -92,10 +92,10 @@ const StyledButton = styled.button<ButtonProps>`
       background-color: #FFA200;
     }
   `}
-`
+`;
 
 const Button: React.FC<ButtonProps> = ({
-  size = 'medium',
+  size = "medium",
   disabled = false,
   text,
   onClick,
@@ -112,7 +112,7 @@ const Button: React.FC<ButtonProps> = ({
     >
       {text}
     </StyledButton>
-  )
-}
+  );
+};
 
-export default Button
+export default Button;

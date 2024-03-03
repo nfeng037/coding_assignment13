@@ -2345,7 +2345,7 @@ var Text = function (_a) {
 };
 var templateObject_1$6;
 
-var CardContainer = ut.div(templateObject_1$5 || (templateObject_1$5 = __makeTemplateObject(["\n  border: 1px solid #ddd;\n  border-radius: 4px;\n  padding: 20px;\n  max-width: 300px;\n  opacity: ", ";\n  ", "\n"], ["\n  border: 1px solid #ddd;\n  border-radius: 4px;\n  padding: 20px;\n  max-width: 300px;\n  opacity: ", ";\n  ", "\n"])), function (props) { return (props.disabled ? 0.5 : 1); }, function (props) {
+var CardContainer = ut.div(templateObject_1$5 || (templateObject_1$5 = __makeTemplateObject(["\n  border: 1px solid #ddd;\n  border-radius: 4px;\n  padding: 20px;\n  max-width: ", ";\n  opacity: ", ";\n  ", "\n"], ["\n  border: 1px solid #ddd;\n  border-radius: 4px;\n  padding: 20px;\n  max-width: ", ";\n  opacity: ", ";\n  ", "\n"])), function (props) { return (props.width || '300px'); }, function (props) { return (props.disabled ? 0.5 : 1); }, function (props) {
     return props.disabled &&
         "\n  cursor: not-allowed;\n";
 });
@@ -2354,8 +2354,8 @@ var Title$1 = ut.h2(templateObject_3$1 || (templateObject_3$1 = __makeTemplateOb
 var Content = ut.p(templateObject_4$1 || (templateObject_4$1 = __makeTemplateObject(["\n  margin-top: 10px;\n"], ["\n  margin-top: 10px;\n"])));
 var Button = ut.button(templateObject_5 || (templateObject_5 = __makeTemplateObject(["\n  margin-top: 20px;\n  padding: 10px 20px;\n  border: none;\n  border-radius: 4px;\n  background-color: blue;\n  color: white;\n  cursor: pointer;\n"], ["\n  margin-top: 20px;\n  padding: 10px 20px;\n  border: none;\n  border-radius: 4px;\n  background-color: blue;\n  color: white;\n  cursor: pointer;\n"])));
 var Card = function (_a) {
-    var imageurl = _a.imageurl, title = _a.title, content = _a.content, buttonText = _a.buttonText, onButtonClick = _a.onButtonClick, disabled = _a.disabled;
-    return (jsxRuntimeExports.jsxs(CardContainer, { disabled: disabled, children: [imageurl && jsxRuntimeExports.jsx(Image, { src: imageurl, alt: title }), jsxRuntimeExports.jsx(Title$1, { children: title }), jsxRuntimeExports.jsx(Content, { children: content }), buttonText && (jsxRuntimeExports.jsx(Button, { onClick: onButtonClick, disabled: disabled, children: buttonText }))] }));
+    var imageurl = _a.imageurl, title = _a.title, content = _a.content, buttonText = _a.buttonText, onButtonClick = _a.onButtonClick, disabled = _a.disabled, props = __rest(_a, ["imageurl", "title", "content", "buttonText", "onButtonClick", "disabled"]);
+    return (jsxRuntimeExports.jsxs(CardContainer, __assign({ disabled: disabled }, props, { children: [imageurl && jsxRuntimeExports.jsx(Image, { src: imageurl, alt: title }), jsxRuntimeExports.jsx(Title$1, { children: title }), jsxRuntimeExports.jsx(Content, { children: content }), buttonText && (jsxRuntimeExports.jsx(Button, { onClick: onButtonClick, disabled: disabled, children: buttonText }))] })));
 };
 var templateObject_1$5, templateObject_2$1, templateObject_3$1, templateObject_4$1, templateObject_5;
 

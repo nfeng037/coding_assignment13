@@ -1,6 +1,6 @@
-import React from 'react'
-import styled from 'styled-components'
-import { type RadioProps } from './Radio.types'
+import React from "react";
+import styled from "styled-components";
+import { type RadioProps } from "./Radio.types";
 
 const StyledRadio = styled.input`
   margin: 0.5rem;
@@ -10,7 +10,7 @@ const StyledRadio = styled.input`
     `
     cursor: not-allowed;
   `}
-`
+`;
 
 export const Radio: React.FC<RadioProps> = ({
   id,
@@ -18,7 +18,7 @@ export const Radio: React.FC<RadioProps> = ({
   value,
   checked,
   disabled,
-  onChange
+  onChange,
 }) => {
   return (
     <StyledRadio
@@ -30,7 +30,7 @@ export const Radio: React.FC<RadioProps> = ({
       disabled={disabled}
       onChange={onChange}
     />
-  )
-}
+  );
+};
 
-export default Radio
+export default Radio;

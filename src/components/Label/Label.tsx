@@ -1,14 +1,14 @@
-import React from 'react'
-import styled from 'styled-components'
-import { type LabelProps } from './Label.types'
+import React from "react";
+import styled from "styled-components";
+import { type LabelProps } from "./Label.types";
 
 const StyledLabel = styled.label<LabelProps>`
   font-size: ${(props) =>
-    props.size === 'small'
-      ? '0.8rem'
-      : props.size === 'medium'
-        ? '1rem'
-        : '1.1rem'};
+    props.size === "small"
+      ? "0.8rem"
+      : props.size === "medium"
+        ? "1rem"
+        : "1.1rem"};
   font-family: "Playfair Display", serif;
   cursor: pointer;
   color: "#2F2F2F";
@@ -19,10 +19,10 @@ const StyledLabel = styled.label<LabelProps>`
     cursor: not-allowed;
     color: #ccc;
   `}
-`
+`;
 
 const Label: React.FC<LabelProps> = ({
-  size = 'medium',
+  size = "medium",
   htmlFor,
   text,
   disabled = false,
@@ -32,7 +32,7 @@ const Label: React.FC<LabelProps> = ({
     <StyledLabel size={size} htmlFor={htmlFor} disabled={disabled} {...props}>
       {text}
     </StyledLabel>
-  )
-}
+  );
+};
 
-export default Label
+export default Label;
